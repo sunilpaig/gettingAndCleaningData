@@ -48,7 +48,7 @@ dataFinal<-dataFinal[featuresMeanStd.names]
 finalDataWOActivityType  <- dataFinal[,names(dataFinal) != 'activityType']
 
 # Summarizing the finalDataNoActivityType table to include just the mean of each variable for each activity and each subject
-tidyData    <-aggregate(finalDataNoActivityType[,names(finalDataNoActivityType) != c('activityId','subjectId')],by=list(activityId=finalDataNoActivityType$activityId,subjectId = finalDataNoActivityType$subjectId),mean)
+tidyData    <-aggregate(finalDataWOActivityType[,names(finalDataWOActivityType) != c('activityId','subjectId')],by=list(activityId=finalDataWOActivityType$activityId,subjectId = finalDataWOActivityType$subjectId),mean)
 
 # Merging the tidyData with activityType to include descriptive acitvity names
 tidyData    <-merge(tidyData,activityType,by='activityId',all.x=TRUE)
