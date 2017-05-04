@@ -1,7 +1,7 @@
 # gettingAndCleaningData
 
 * Dwonload the file if it does not exist
-* Unzip the file, if the file exists then overwrite
+* Unzip the file, if the file exists then Overwrite
 * Read the activity lables and features
 * Read the train datasets and name the columns
 * Read the test datasets and name the columns
