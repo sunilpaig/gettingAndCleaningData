@@ -80,7 +80,7 @@ This code book is part of the getting and cleaning data project
 * `fBodyBodyGyroMagMeanFreq`
 * `fBodyBodyGyroJerkMagMean`
 * `fBodyBodyGyroJerkMagStd`
-* `fBodyBodyGyroJerkMagMeanFreq`
+* `fBodyBodyGyroJerkMagMeanFreqn`
 
 ##Data
 
