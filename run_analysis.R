@@ -53,7 +53,7 @@ tidyData    <-aggregate(finalDataWOActivityType[,names(finalDataWOActivityType) 
 # Merging the tidyData with activityType to include descriptive acitvity names
 tidyData    <-merge(tidyData,activityType,by='activityId',all.x=TRUE)
 
-# Export the tidyData set 
+# Export the tidyData SET
 write.table(tidyData, './tidyData.txt',row.names=FALSE,sep='\t')
 
 
